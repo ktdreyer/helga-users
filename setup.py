@@ -148,11 +148,9 @@ setup(name="helga-users",
       long_description=LONG_DESCRIPTION,
       packages=find_packages(),
       install_requires=[
+          'arrow',
           'helga',
           'ldaptor',
-          'pyOpenSSL',  # for LDAP servers that use SSL
-          'service_identity',  # for LDAP servers that use SSL
-          'pyasn1',  # for LDAP servers that use SSL
       ],
       tests_require=[
           'pytest',
