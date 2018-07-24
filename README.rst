@@ -18,6 +18,11 @@ and print information about users from LDAP.
                     America/Denver timezone)
 
 
+By default the plugin searches the ``rhatNickName`` attribute in LDAP. If
+it finds no matching user there, it searches the ``uid`` attribute. The idea is
+that you should be able to locate a user account based on the more natural IRC
+nick, and failing that, you can find them with their main Kerberos UID.
+
 Installation
 ------------
 
