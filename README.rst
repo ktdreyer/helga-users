@@ -10,7 +10,8 @@ http://helga.readthedocs.org.
 This user plugin allows Helga to respond to user-related commands in IRC
 and print information about users from LDAP.
 
-::
+Currently the bot reports the user's `local time
+<https://www.youtube.com/watch?v=RfNISfcJuYo>`_::
 
   03:14 < ktdreyer> helgabot: user adeza
   03:14 < helgabot> adeza is in Remote US GA
