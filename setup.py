@@ -126,7 +126,8 @@ class PyTest(TestCommand):
 
     def run_tests(self):
         import pytest
-        errno = pytest.main('helga_users/tests', self.pytest_args)
+        args = 'helga_users/tests ' + self.pytest_args
+        errno = pytest.main(args.split())
         sys.exit(errno)
 
 
